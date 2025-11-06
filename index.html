@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Jogo 🎮</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center titulo">Cadastro de Jogo 🎮</h1>
+    <form id="cadastroForm" class="mt-4">
+      
+      <div class="mb-3">
+        <label for="usuario" class="form-label">Nome do Usuário:</label>
+        <input type="text" class="form-control" id="usuario" required>
+        <div class="invalid-feedback">Informe o nome do usuário.</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">E-mail:</label>
+        <input type="email" class="form-control" id="email" required>
+        <div class="invalid-feedback">Por favor, insira um e-mail válido.</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="nomeJogo" class="form-label">Nome do Jogo:</label>
+        <input type="text" class="form-control" id="nomeJogo" required>
+        <div class="invalid-feedback">Informe o nome do jogo.</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="genero" class="form-label">Gênero:</label>
+        <select id="genero" class="form-select" required>
+          <option value="">Selecione...</option>
+          <option>Ação</option>
+          <option>Aventura</option>
+          <option>RPG</option>
+          <option>Estratégia</option>
+          <option>Corrida</option>
+          <option>Simulação</option>
+        </select>
+        <div class="invalid-feedback">Selecione um gênero.</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="plataforma" class="form-label">Plataforma:</label>
+        <input type="text" class="form-control" id="plataforma" placeholder="Ex: PC, PS5, Xbox..." required>
+        <div class="invalid-feedback">Informe a plataforma.</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="preco" class="form-label">Preço (R$):</label>
+        <input type="number" class="form-control" id="preco" required>
+        <div class="invalid-feedback">Informe o preço do jogo.</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="dataLancamento" class="form-label">Data de Lançamento:</label>
+        <input type="date" class="form-control" id="dataLancamento" required>
+        <div class="invalid-feedback">Informe a data de lançamento.</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="classificacao" class="form-label">Classificação Indicativa:</label>
+        <select id="classificacao" class="form-select" required>
+          <option value="">Selecione...</option>
+          <option>Livre</option>
+          <option>10+</option>
+          <option>12+</option>
+          <option>14+</option>
+          <option>16+</option>
+          <option>18+</option>
+        </select>
+        <div class="invalid-feedback">Informe a classificação indicativa.</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="descricao" class="form-label">Descrição:</label>
+        <textarea class="form-control" id="descricao" rows="3" required></textarea>
+        <div class="invalid-feedback">Adicione uma breve descrição.</div>
+      </div>
+
+      <button type="submit" class="btn btn-primary w-100 mt-3">Cadastrar</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
