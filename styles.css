@@ -54,3 +54,20 @@ body {
   color: #ff5c5c;
   font-size: 0.9rem;
 }
+
+.form-control:focus,
+.form-select:focus {
+  background-color: #2a475e;
+  color: #fff;
+  border-color: #66c0f4;
+  box-shadow: 0 0 5px #66c0f4;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+textarea:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 50px #2a475e inset !important;
+    -webkit-text-fill-color: #fff !important;
+}
